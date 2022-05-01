@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Урок №16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<!-- Место для шапки -->
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<form action="#" method="get" class="appointment">
+					<h3 class="appointment__title">Make an appointment</h3>
+					<div class="appointment__input-box">
+						<input type="text" name="userName" value="" required placeholder="Name" class="appointment__name input">
+						<input type="email" name="userail" value="" required placeholder="Email" class="appointment__email input">
+						<input type="tel" name="userPhone" value="" placeholder="Phone Number" class="appointment__phone input">
+						<select name="service" class="appointment__select select-appointment input">
+							<option value="" disabled selected hidden class="select-appointment__item">Select Service</option>
+							<option value="1" class="select-appointment__item">Service 1</option>
+							<option value="2" class="select-appointment__item">Service 2</option>
+							<option value="3" class="select-appointment__item">Service 3</option>
+						</select>
+						<textarea name="aboutPuppy" placeholder="Tell us about your puppers include his/her name" class="appointment__about"></textarea>
+					</div>
+					<button type="submit" class="appointment__button">Make an Appointment</button>
+				</form>
+				<form action="#" method="get" class="summary">
+					<h3 class="summary__title">Summary</h3>
+					<h4 class="summary__heading">Estimate Shipping and Tax</h4>
+					<p class="summary__destination">Enter your destination to get a shipping estimate.</p>
+					<div class="summary__wrap-input">
+						<label for="country" class="label-item">Country</label>
+						<select id="country" name="ucerCountry" class="summary__select select-summary summary__input-item">
+							<option value="1" class="select-summary__item">Australia</option>
+							<option value="2" class="select-summary__item">Belarus</option>
+							<option value="3" class="select-summary__item">Finland</option>
+							<option value="4" class="select-summary__item">Russia</option>
+							<option value="5" class="select-summary__item">Ukraine</option>
+						</select>
+
+						<label for="state" class="label-item">State/Province</label>
+						<input id="state" type="text" name="state" value="" class="summary__input-item">
+
+						<label for="zip" class="label-item">Zip/Postal Code</label>
+						<input id="zip" type="text" name="zip" value="" class="summary__input-item">
+					</div>
+					<div class="summary__price price-summary">
+						<h4 class="price-summary__title">Standard Rate</h4>
+						<div class="price-summary__box">
+							<input id="standard" checked type="radio" name="price" value="$21.00" class="price-summary__item">
+							<label for="standard" class=" price-summary__text">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+						</div>
+						<h4 class="price-summary__title">Pickup from store</h4>
+						<div class="price-summary__box">
+							<input id="pickup" type="radio" name="price" value="$0.00" class="price-summary__item">
+							<label for="pickup" class="price-summary__text">1234 Street Adress City Address, 1234 $0.00</label>
+						</div>
+					</div>
+					<h4 class="summary__heading">Apply Discount Code</h4>
+					<div class="summary__wrap-input">
+						<label for="code" class="label-item">Enter discount code</label>
+						<input id="code" type="text" name="code" value="" placeholder="Enter Discount code" class="summary__input-item">
+					</div>
+					<button type="submit" class="summary__button">Apply Discount</button>
+				</form>
+				<form action="#" method="get" class="customers">
+					<h3 class="customers__title">Registered Customers</h3>
+					<p class="customers__subtitle">If you have an account, sign in with your email address.</p>
+					<div class="customers__enter">
+						<label for="email" class="customers__label">Email</label>
+						<input id="email" type="text" name="userEmail" value="" placeholder="Your Email" required class="customers__input">
+						<label for="password" class="customers__label">Password</label>
+						<input id="password" type="text" name="userPass" value="" placeholder="Your Password" required class="customers__input">
+					</div>
+					<div class="customers__btn">
+						<button type="submit" class="customers__button">Sign In</button>
+						<a href="#!" class="customers__link">Forgot Your Password?</a>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer class="footer">
+			<!-- Место для подвала -->
+		</footer>
+	</div>
+</body>
+
+</html>

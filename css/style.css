@@ -1,0 +1,338 @@
+/* &display=swap */
+@import "null.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,regular,600,700,800,900&display=swap');
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1050px;
+	padding: 0px 15px;
+}
+/* ================================================================ */
+.header {
+}
+.header {
+}
+.main {
+	flex: 1 1 auto;
+}
+.main__container {
+	padding: 50px;
+}
+button,
+select, 
+input, 
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+.appointment {
+	background: #5D62B5;
+	border-radius: 40px;
+	padding: 76px 57px;
+	font-family: 'Roboto', sans-serif;
+	color: #FFFFFF;
+	max-width: 585px;
+	margin: 0 auto 50px;
+}
+.appointment :focus {
+	box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.2); 
+	outline: none;
+}
+.appointment__title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	margin-bottom: 48px;
+}
+.appointment__input-box {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	gap: 22px;
+}
+.input {
+	flex: 1 0 224px;
+	background: transparent;
+	border-radius: 10px;
+	border: 2px solid rgb(255, 255, 255, 0.8);
+	letter-spacing: 0.15px;
+	height: 48px;
+	padding: 0 23px;
+	min-width: 224px;
+}
+.input::placeholder {
+	color: #FFFFFF;
+}
+.appointment__name {
+	color: #FFFFFF;
+}
+.appointment__email {
+}
+.appointment__phone {
+}
+.appointment__select {
+	color: #FFFFFF;
+	appearance: none;
+}
+.select-appointment {
+}
+.select-appointment__item {
+	background: #5D62B5;
+}
+.appointment__about {
+	flex: 0 1 100%;
+	min-width: 224px;
+	padding: 17px 23px ;
+	min-height: 180px;
+	max-height: 500px;
+	background: transparent;
+	border-radius: 10px;
+	border: 2px solid rgb(255, 255, 255, 0.8);
+	letter-spacing: 0.15px;
+	color: #FFFFFF;
+}
+.appointment__about::placeholder {
+	color: #FFFFFF;
+}
+.appointment__button {
+	display: flex;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border-radius: 8px;
+	background: #F2726F;
+	padding: 12px 34px;
+	margin-left: auto;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.appointment__button:hover {
+	outline: 1px solid #F2726F;
+	background-color: transparent;
+	color: #F2726F;	
+}
+.summary {
+	padding: 18px 30px 30px;
+	background: #F5F7FF;
+	margin: 0 auto 50px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.5;
+	max-width: 446px;
+}
+.summary :focus{
+	outline: 2px solid rgba(0, 123, 255, 0.25);
+}
+.summary__title {
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 19px;
+}
+.summary__heading {
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+.summary__destination {
+	font-size: 14px;
+	color: #666666;
+	margin-bottom: 12px;
+	max-width: 287px;
+}
+.summary__wrap-input {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 19px;
+}
+.label-item {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+	align-self: flex-start;
+}
+.summary__select {
+	appearance: none;
+}
+.select-summary {
+
+}
+.summary__input-item {
+	background: #FFFFFF;
+	border: 1px solid #A2A6B0;
+	border-radius: 4px;
+	height: 50px;
+	padding: 0 17px;
+}
+.summary__input-item:not(:last-child) {
+	margin-bottom: 5px;
+}
+.select-summary__item {
+	font-size: 14px;
+	line-height: 1.4;
+}
+.price-summary {
+}
+.price-summary__title{
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+}
+.price-summary__box {
+	position: relative;
+}
+.price-summary__box:not(:last-child) {
+	margin-bottom: 13px;
+}
+.price-summary__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+.price-summary__item:focus + .price-summary__text:before {
+	box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
+}
+.price-summary__item:checked + .price-summary__text::after {
+	transform: scale(1);
+}
+.price-summary__text {
+	position: relative;
+	display: flex;
+	column-gap: 8px;
+	font-size: 14px;
+	line-height: 1.4;
+	padding-left: 1px;
+}
+.price-summary__text::before {
+	content: "";
+	flex: 0 0 21px;
+	height: 21px;
+	border-radius: 50%;
+	border: 2px solid #0156FF;
+	cursor: pointer;
+}
+.price-summary__text::after {
+	position: absolute;
+	content: "";
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #0156FF;
+	top: 4px;
+	left: 4.8px;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+}
+.summary__button {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #0156FF;
+	border: 2px solid #0156FF;
+	background: transparent;
+	border-radius: 50px;
+	padding: 12.5px 30px;
+	width: 100%;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+.summary__button:hover {
+	background: #0156FF;
+	color: #FFFFFF;
+}
+.customers {
+	padding: 37px 57.5px 43px;
+	background: #F5F7FF;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	margin: 0 auto 50px;
+	max-width: 564px;
+}
+.customers :focus{
+	/* outline: 2px solid rgba(0, 123, 255, 0.25); */
+	box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
+	outline: none;
+}
+.customers__title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 11px;
+}
+.customers__subtitle {
+	font-weight: 300;
+	line-height: 2.14;
+	margin-bottom: 6.9px;
+}
+.customers__enter {
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.customers__label {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 2.1;
+}
+.customers__label::after {
+	content: "*";
+	color: #C94D3F;
+	margin-left: 3px;
+}
+.customers__input {
+	border: 1px solid #A2A6B0;
+	font-weight: 300;
+	line-height: 1.4;
+	padding: 0 17px;
+	height: 50px;
+}
+.customers__input::placeholder{
+	color: #A2A6B0;
+	text-transform: capitalize;
+}
+.customers__input:not(:last-child) {
+	margin-bottom: 6.1px;
+}
+.customers__btn {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 15px 23px;
+}
+.customers__button {
+	cursor: pointer;
+	border: 2px solid transparent;
+	background: #0156FF;
+	border-radius: 50px;
+	color: #FFFFFF;
+	font-weight: 600;
+	line-height: 1.5;
+	padding: 12.5px 50px;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+}
+.customers__button:hover {
+	border: 2px solid #0156FF;
+	color: #0156FF;
+	background: transparent;
+}
+.customers__link {
+	color: #0156FF;
+	line-height: 1.4;
+}
+.customers__link:hover{
+	text-decoration: underline;
+}
+.footer {
+}
